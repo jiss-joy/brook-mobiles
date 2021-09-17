@@ -1,4 +1,5 @@
 import 'package:brookmobiles/screens/home.dart';
+import 'package:brookmobiles/screens/index.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
       title: 'Brook Mobiles',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: IndexScreen(),
       routes: {},
     );
   }
