@@ -1,8 +1,6 @@
+import 'package:brookmobiles/consts/icons.dart';
 import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttericon/font_awesome5_icons.dart';
-import 'package:fluttericon/font_awesome_icons.dart';
-import 'package:fluttericon/mfg_labs_icons.dart';
 
 class FloatingNavigationBar extends StatelessWidget {
   final int index;
@@ -21,20 +19,19 @@ class FloatingNavigationBar extends StatelessWidget {
       selectedBackgroundColor: Colors.black,
       items: [
         FloatingNavbarItem(
-          icon: FontAwesome.home,
-          // icon: Icons.home,
+          icon: MyIcons.home,
           title: "Home",
         ),
         FloatingNavbarItem(
-          icon: MfgLabs.search,
+          icon: MyIcons.search,
           title: "Search",
         ),
         FloatingNavbarItem(
-          icon: FontAwesome5.tools,
+          icon: MyIcons.service,
           title: "Service",
         ),
         FloatingNavbarItem(
-          icon: FontAwesome.user,
+          icon: MyIcons.profile,
           title: "Profile",
         ),
       ],

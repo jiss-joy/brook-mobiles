@@ -30,7 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   #For the floating bottom navigation bar.
   floating_bottom_navigation_bar: ^1.5.2
-  fluttericon: ^2.0.0
+  flutter_icons: ^1.1.0
 
 dev_dependencies:
   flutter_test:
