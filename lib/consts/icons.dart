@@ -17,6 +17,7 @@ class MyIcons {
   static IconData orders = SimpleLineIcons.social_dropbox;
   static IconData services = SimpleLineIcons.wrench;
   static IconData legal = FontAwesome.file_text_o;
+  static IconData about = Feather.info;
   static IconData settings = Feather.settings;
   static IconData help = Feather.headphones;
 
