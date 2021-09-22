@@ -1,4 +1,4 @@
-import 'package:brookmobiles/consts/icons.dart';
+import 'package:brookmobiles/constants/icons.dart';
 import 'package:brookmobiles/custom_shape.dart';
 import 'package:brookmobiles/widgets/profile_item.dart';
 import 'package:flutter/material.dart';
