@@ -26,4 +26,10 @@ class MyIcons {
   static IconData instagram = FontAwesome.instagram;
   static IconData facebook = FontAwesome.facebook;
   static IconData twitter = FontAwesome.twitter;
+
+  //Settings
+  static IconData versionCode = FontAwesome.code;
+  static IconData userID = FontAwesome5.id_badge;
+  static IconData language = MaterialIcons.language;
+  static IconData theme = Feather.moon;
 }
