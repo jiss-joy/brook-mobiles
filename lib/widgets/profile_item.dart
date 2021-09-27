@@ -4,12 +4,14 @@ class ProfileItem extends StatelessWidget {
   final IconData icon;
   final String title;
   final Function function;
+  final int routeIndex;
   final bool isLastItem;
 
   ProfileItem({
     required this.icon,
     required this.title,
     required this.function,
+    required this.routeIndex,
     required this.isLastItem,
   });
 
@@ -24,7 +26,7 @@ class ProfileItem extends StatelessWidget {
           ),
           title: Text(title),
           onTap: () {
-            function();
+            function(context, routeIndex);
           },
         ),
         if (!isLastItem)

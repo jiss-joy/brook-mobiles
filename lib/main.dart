@@ -1,5 +1,6 @@
 import 'package:brookmobiles/screens/home.dart';
 import 'package:brookmobiles/screens/index.dart';
+import 'package:brookmobiles/screens/settings.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -53,7 +54,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: IndexScreen(),
-      routes: {},
+      routes: {
+        SettingsScreen.routeName: (ctx) => SettingsScreen(),
+      },
     );
   }
 }

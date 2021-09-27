@@ -7,8 +7,20 @@ class ProfileScreen extends StatelessWidget {
   static const String imageURL =
       'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80';
 
-  void _goToScreen() {
-    print('OK');
+  static const routes = [
+    '/orders',
+    '/services',
+    '/cart',
+    '/wishlist',
+    '/profile',
+    '/about-us',
+    '/settings',
+    '/legal',
+    '/help',
+  ];
+
+  void _goToScreen(BuildContext ctx, int routeIndex) {
+    Navigator.pushNamed(ctx, routes[routeIndex]);
   }
 
   @override
@@ -86,30 +98,35 @@ class ProfileScreen extends StatelessWidget {
                       icon: MyIcons.orders,
                       title: 'My Orders',
                       function: _goToScreen,
+                      routeIndex: 0,
                       isLastItem: false,
                     ),
                     ProfileItem(
                       icon: MyIcons.services,
                       title: 'My Services',
                       function: _goToScreen,
+                      routeIndex: 1,
                       isLastItem: false,
                     ),
                     ProfileItem(
                       icon: MyIcons.cart,
                       title: 'My Cart',
                       function: _goToScreen,
+                      routeIndex: 2,
                       isLastItem: false,
                     ),
                     ProfileItem(
                       icon: MyIcons.favorites_o,
                       title: 'My Wishlist',
                       function: _goToScreen,
+                      routeIndex: 3,
                       isLastItem: false,
                     ),
                     ProfileItem(
                       icon: MyIcons.profile,
                       title: 'My Profile',
                       function: _goToScreen,
+                      routeIndex: 4,
                       isLastItem: true,
                     ),
                   ],
@@ -124,24 +141,28 @@ class ProfileScreen extends StatelessWidget {
                       icon: MyIcons.about,
                       title: 'About Us',
                       function: _goToScreen,
+                      routeIndex: 5,
                       isLastItem: false,
                     ),
                     ProfileItem(
                       icon: MyIcons.settings,
                       title: 'Settings',
                       function: _goToScreen,
+                      routeIndex: 6,
                       isLastItem: false,
                     ),
                     ProfileItem(
                       icon: MyIcons.legal,
                       title: 'Legal',
                       function: _goToScreen,
+                      routeIndex: 7,
                       isLastItem: false,
                     ),
                     ProfileItem(
                       icon: MyIcons.help,
                       title: 'Help Centre',
                       function: _goToScreen,
+                      routeIndex: 8,
                       isLastItem: true,
                     ),
                   ],
