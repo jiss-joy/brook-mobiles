@@ -13,10 +13,17 @@ class FloatingNavigationBar extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return FloatingNavbar(
+      backgroundColor:
+          Theme.of(context).bottomNavigationBarTheme.backgroundColor,
       borderRadius: 50,
       itemBorderRadius: 50,
       selectedItemColor: Colors.amber,
       selectedBackgroundColor: Colors.black,
+      margin: EdgeInsets.all(20),
+      unselectedItemColor: Colors.grey,
+      elevation: 30,
+      iconSize: 20,
+      currentIndex: index,
       items: [
         FloatingNavbarItem(
           icon: MyIcons.home,
@@ -35,11 +42,6 @@ class FloatingNavigationBar extends StatelessWidget {
           title: "Profile",
         ),
       ],
-      margin: EdgeInsets.all(20),
-      unselectedItemColor: Colors.grey,
-      elevation: 30,
-      iconSize: 20,
-      currentIndex: index,
       onTap: (int index) {
         function(index);
       },
