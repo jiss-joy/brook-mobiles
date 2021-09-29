@@ -42,7 +42,7 @@ class ProfileScreen extends StatelessWidget {
                   ClipPath(
                     clipper: CustomShape(),
                     child: Container(
-                      color: Color(0XFFFFF6E3),
+                      color: Theme.of(context).appBarTheme.backgroundColor,
                       height: 300,
                     ),
                   ),
@@ -178,7 +178,6 @@ class ProfileScreen extends StatelessWidget {
                   Icon(
                     MyIcons.whatsapp,
                     size: 20,
-                    color: Colors.black,
                   ),
                   SizedBox(
                     width: 10,
@@ -186,7 +185,6 @@ class ProfileScreen extends StatelessWidget {
                   Icon(
                     MyIcons.instagram,
                     size: 20,
-                    color: Colors.black,
                   ),
                   SizedBox(
                     width: 10,
@@ -194,7 +192,6 @@ class ProfileScreen extends StatelessWidget {
                   Icon(
                     MyIcons.facebook,
                     size: 20,
-                    color: Colors.black,
                   ),
                   SizedBox(
                     width: 10,
@@ -202,7 +199,6 @@ class ProfileScreen extends StatelessWidget {
                   Icon(
                     MyIcons.twitter,
                     size: 20,
-                    color: Colors.black,
                   ),
                 ],
               ),

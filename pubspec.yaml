@@ -36,6 +36,10 @@ dependencies:
   provider: ^6.0.1
   # Shared Preferences Class - To save user preferences locally.
   shared_preferences: ^2.0.8
+  # Package Info Plus - To get the package details.
+  package_info_plus: ^1.0.6
+  # List Tile Switch - For Customised Switch
+  list_tile_switch: ^1.0.0
 
 dev_dependencies:
   flutter_test:
