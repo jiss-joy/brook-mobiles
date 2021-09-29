@@ -32,4 +32,5 @@ class MyIcons {
   static IconData userID = FontAwesome5.id_badge;
   static IconData language = MaterialIcons.language;
   static IconData theme = Feather.moon;
+  static IconData logout = Feather.log_out;
 }
