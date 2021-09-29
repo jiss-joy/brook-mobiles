@@ -22,7 +22,6 @@ class ProfileItem extends StatelessWidget {
         ListTile(
           leading: Icon(
             icon,
-            color: Colors.black,
           ),
           title: Text(title),
           onTap: () {
